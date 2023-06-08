@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gold;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.wrapper{
+    font-family: 'Poppins', sans-serif;
+    /* max-width: 35rem; */
+
+    width: 50vmin;
+    /* min-height: 23.8rem; */
+    border: 1px solid black;
+    padding: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.wrapper p{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+    text-align: center;    
+}
+
+
+.icon{
+    text-align: center;
+}
+
+.icon img{
+    width: 8rem;
+}
+
+.icon img:hover{
+    animation: shake 0.2s infinite;
+}
+
+@keyframes shake {
+    0%,100%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(15deg);
+    }
+}
+
+button{
+    padding: 1rem 1.5rem;
+    background-color: gold;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    display: block;
+    margin: 1rem auto;
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/* ------------------------------------ */
+
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }    
+}
+
+@media(max-width:576px){
+    html{
+        font-size: 50%;
+    }   
+    
+    .wrapper{
+        padding: 1.5rem;
+    }
+
+    .wrapper p{
+        margin: 0.5rem 0;
+        font-size: 1.3rem;
+    }
+
+    button{
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+}
